@@ -1,4 +1,5 @@
 import Alert from "./components/Alert";
+import Button from "./components/Button";
 import ListGroup from "./components/ListGroup";
 import Message from "./Message";
 
@@ -21,6 +22,8 @@ function App(){
       <p>hi form p</p>
       <div>hi from div</div>
     </Alert>
+
+    <Button text="this is my button" click={ ()=> console.log("hi os")}/>
 
   </>
   )
