@@ -1,3 +1,4 @@
+import Alert from "./components/Alert";
 import ListGroup from "./components/ListGroup";
 import Message from "./Message";
 
@@ -9,10 +10,19 @@ function App(){
   }
 
   return (
+    <>
   <div>
     <Message/>
     <ListGroup heading="Os list" items={items} OnselectItem={handel}/>
   </div>
+
+    <Alert> 
+      os <span>hi from span</span>
+      <p>hi form p</p>
+      <div>hi from div</div>
+    </Alert>
+
+  </>
   )
 }
 

@@ -48,3 +48,15 @@ export default tseslint.config({
   },
 })
 ```
+
+
+Summary:
+Lesson 15 - Conditional Rendering in reactjs
+  1. (The conditional)  ? If True : If False
+      items.length === 0 ? "Items is empty" : "Items is'n empty"
+
+  2. {The conditional && if True}
+      {items.length === 0 && "Items is empty}
+
+
+Lesson 20 - State VS Props
