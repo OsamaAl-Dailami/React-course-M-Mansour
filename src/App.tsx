@@ -2,11 +2,12 @@ import ListGroup from "./components/ListGroup";
 import Message from "./Message";
 
 function App(){
+  const items = ["An item os", "A second item", "A third item", "A fourth item"];
 
   return (
   <div>
     <Message/>
-    <ListGroup/>
+    <ListGroup heading="Os list" items={items}/>
   </div>
   )
 }
