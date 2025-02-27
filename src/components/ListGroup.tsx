@@ -2,16 +2,17 @@ import { MouseEvent, useState } from "react";
 
 interface ListGroupProps{
   heading: string,
-  items: string[]
+  items: string[],
+  OnselectItem: (item: string)=>void
 }
 
-function ListGroup({heading, items} : ListGroupProps) {
+function ListGroup({heading, items, OnselectItem} : ListGroupProps) {
   
-  
+
 
 
   const [selectedIndex, setSelectedIndex] = useState(0);
-
+  
 
   return (
     <>
@@ -20,7 +21,7 @@ function ListGroup({heading, items} : ListGroupProps) {
       {items.length === 0 && "no found items"}
       <ul className="list-group">
           {items.map((items, index) => (
-            <li  onClick={()=>setSelectedIndex(index)} key={index} className={selectedIndex === index ?"list-group-item active" : "list-group-item" } >
+            <li  onClick={()=> {setSelectedIndex(index); OnselectItem(items);} } key={index} className={selectedIndex === index ?"list-group-item active" : "list-group-item" } >
               {items}
             </li>
           ))}

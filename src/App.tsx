@@ -4,10 +4,14 @@ import Message from "./Message";
 function App(){
   const items = ["An item os", "A second item", "A third item", "A fourth item"];
 
+  const handel = (item: string) => {
+    console.log(item)
+  }
+
   return (
   <div>
     <Message/>
-    <ListGroup heading="Os list" items={items}/>
+    <ListGroup heading="Os list" items={items} OnselectItem={handel}/>
   </div>
   )
 }
