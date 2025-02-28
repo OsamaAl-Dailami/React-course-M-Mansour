@@ -1,63 +1,37 @@
+import { useState } from "react";
 import Alert from "./components/Alert";
 import Button from "./components/Button";
 import ListGroup from "./components/ListGroup";
 import Message from "./Message";
 
-function App(){
-  const items = ["An item os", "A second item", "A third item", "A fourth item"];
+function App() {
+  const items = [
+    "An item os",
+    "A second item",
+    "A third item",
+    "A fourth item",
+  ];
 
   const handel = (item: string) => {
-    console.log(item)
-  }
+    console.log(item);
+  };
+  
+  const [visible, setVisible] = useState(true)
 
   return (
     <>
-  <div>
-    <Message/>
-    <ListGroup heading="Os list" items={items} OnselectItem={handel}/>
-  </div>
+      <div>
+        <Message />
+        <ListGroup heading="Os list" items={items} OnselectItem={handel} />
+      </div>
+      { visible && <Alert onClose={()=>setVisible(false)} >my alert</Alert>}
 
-    <Alert> 
-      os <span>hi from span</span>
-      <p>hi form p</p>
-      <div>hi from div</div>
-    </Alert>
-
-    <Button text="this is my button" click={ ()=> console.log("hi os")}/>
-
-  </>
-  )
+      <Button text="this is my button" click={() => setVisible(!visible)} />
+    </>
+  );
 }
 
-
 export default App;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
@@ -69,7 +43,6 @@ export default App;
 
 //   return (
 //     <>
-
 
 //       <div>
 //         <a href="https://vite.dev" target="_blank">
