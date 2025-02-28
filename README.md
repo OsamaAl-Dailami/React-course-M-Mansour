@@ -60,3 +60,13 @@ Lesson 15 - Conditional Rendering in reactjs
 
 
 Lesson 20 - State VS Props
+
+Lesson 21 - passing children 
+
+Lessons 23 & 24 - Exercises
+
+############################################################
+              <h2> styling component </h2>
+              - Vanilla CSS , CSS modules , css-in-js , Using CSS library - 
+
+Lesson 26 - Vanilla CSS 
