@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { BsCalendarHeart } from "react-icons/bs";
 // import style from "./ListGroup.module.css";
 // import appStyle from "../../App.module.css";
 import styled from "styled-components";
@@ -28,7 +29,8 @@ function ListGroup({ heading, items, OnselectItem }: ListGroupProps) {
 
   return (
     <>
-      <h1 className="mx-auto p-2">{heading}</h1>
+      <h1 className="mx-auto p-2">{heading} <BsCalendarHeart size={100} color="purple" /></h1> 
+      
 
       {items.length === 0 && "no found items"}
       <List>

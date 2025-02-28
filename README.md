@@ -74,3 +74,7 @@ Lesson 26 - Vanilla CSS
 Lesson 27 - CSS Modules
 
 Lesson 28 - CSS-IN-JS  using styled components Library
+
+Lesson 31 - Popular UI Libraries (Bootstrap - Material UI - Tailwind CSS) other (Daisy UI - Chakra UI)
+
+Lesson 32 - Adding react-icons and use it.
