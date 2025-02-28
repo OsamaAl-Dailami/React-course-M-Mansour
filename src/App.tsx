@@ -1,4 +1,5 @@
 import ListGroup from "./components/ListGroup";
+import './App.css'
 
 function App() {
   const items = [
@@ -15,7 +16,7 @@ function App() {
   return (
     <>
       <div>
-        <ListGroup heading="Os list" items={items} OnselectItem={handel} />
+        <ListGroup  heading="OS List" items={items} OnselectItem={handel} />
       </div>
     </>
   );

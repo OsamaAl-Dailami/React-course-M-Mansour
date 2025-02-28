@@ -1,5 +1,6 @@
 import { useState } from "react";
-import "./ListGroup.css";
+import style from "./ListGroup.module.css";
+import appStyle from "../../App.module.css";
 
 interface ListGroupProps{
   heading: string,
@@ -20,7 +21,7 @@ function ListGroup({heading, items, OnselectItem} : ListGroupProps) {
       <h1 className="mx-auto p-2">{heading}</h1>
 
       {items.length === 0 && "no found items"}
-      <ul className="list-group">
+      <ul className={[style.listGroup,appStyle.listGroup].join(" ")}>
           {items.map((items, index) => (
             <li  onClick={()=> {setSelectedIndex(index); OnselectItem(items);} } key={index} className={selectedIndex === index ?"list-group-item active" : "list-group-item" } >
               {items}
