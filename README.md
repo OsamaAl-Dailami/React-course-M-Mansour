@@ -70,3 +70,7 @@ Lessons 23 & 24 - Exercises
               - Vanilla CSS , CSS modules , css-in-js , Using CSS library - 
 
 Lesson 26 - Vanilla CSS 
+
+Lesson 27 - CSS Modules
+
+Lesson 28 - CSS-IN-JS  using styled components Library
