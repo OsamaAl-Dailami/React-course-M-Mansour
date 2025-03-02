@@ -84,8 +84,7 @@ Lesson 33 - create Button component using css Modules
 Lesson 34 - create Liked Button component
 
 ############################################################
-
-                              <h2> Managing Component State </h2>
+                            <h2> Managing Component State </h2>
 
 Lesson 35 to 41 : managing component state - updating object and Nested object using useState Hook
 
