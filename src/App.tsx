@@ -1,6 +1,7 @@
 
 import ListGroup from "./components/ListGroup";
 import Button from "./components/Button/Button";
+import LikeButton from "./components/LikeButton";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         
       </div>
       <Button  onClick={()=>""}>This is my button1</Button>
+      <LikeButton onClick={()=>console.log('the heart is clicked')}/>
     </>
   );
 }
